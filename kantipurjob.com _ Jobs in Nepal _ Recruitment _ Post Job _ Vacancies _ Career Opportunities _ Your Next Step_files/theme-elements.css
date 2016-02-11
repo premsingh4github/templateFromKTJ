@@ -1,0 +1,91 @@
+/*
+Name: 			theme-elements.css
+Written by: 	Okler Themes - (http://www.okler.net)
+Version: 		3.7.0
+*/
+
+
+
+/* Responsive */
+@media (max-width: 479px) {
+	.arrow {
+		display: none;
+	}
+}
+/* Circular Bars */
+.circular-bar {
+	margin-bottom: 25px;
+}
+
+.circular-bar .circular-bar-chart {
+	position: relative;
+}
+
+.circular-bar strong {
+	display: block;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 30px;
+	position: absolute;
+	top: 35%;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+}
+
+.circular-bar label {
+	display: block;
+	font-weight: 100;
+	font-size: 17px;
+	line-height: 20px;
+	position: absolute;
+	top: 50%;
+	width: 80%;
+	left: 10%;
+	text-align: center;
+}
+
+/* Progress */
+.progress {
+	border-radius: 25px;
+	height: 10px;
+	background: #777777;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+	overflow: visible;
+}
+
+.progress-bar {
+	background-color: #C6C6C6;
+	box-shadow: none;
+	position: relative;
+	border-radius: 25px;
+}
+
+.progress-bar-tooltip {
+	position: absolute;
+	padding: 3px 8px;
+	background-color: #E8762F;
+	color: #FFF;
+	line-height: 15px;
+	font-size: 11px;
+	display: block;
+	position: absolute;
+	top: -28px;
+	right: 5px;
+	border-radius: 3px;
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+.progress-bar-tooltip:after {
+	border-color: #E8762F transparent;
+	border-style: solid;
+	border-width: 5px 5px 0;
+	bottom: -5px;
+	content: "";
+	display: block;
+	left: 13px;
+	position: absolute;
+	width: 0;
+}
+

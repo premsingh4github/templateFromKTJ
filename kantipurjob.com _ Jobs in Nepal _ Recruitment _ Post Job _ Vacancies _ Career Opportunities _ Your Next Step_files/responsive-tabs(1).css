@@ -1,0 +1,80 @@
+
+/* REQUIRED for core functionality */
+
+.responsive-tabs__heading { display: none;}
+.responsive-tabs__list__item { display: inline; cursor:pointer;}
+
+
+@media (max-width: 767px) {
+	.responsive-tabs__list { display: none;}
+	.responsive-tabs__heading { display: block; cursor: pointer; font-size: 15px; }
+	.responsive-tabs__panel--closed-accordion-only { display: none;}
+}
+
+@media (min-width: 768px) {
+	.responsive-tabs__panel--closed-accordion-only { display: block !important;}
+}
+
+/* END - Required for core functionality */
+
+
+/* OPTIONAL - Basic Skin */
+
+.responsive-tabs-wrapper { 
+	clear: both;
+	zoom: 1; 
+}
+.responsive-tabs-wrapper:before,
+.responsive-tabs-wrapper:after {
+    content: "";
+    display: table;
+} 
+.responsive-tabs-wrapper:after {
+    clear: both;
+}
+
+.responsive-tabs__heading:focus,
+.responsive-tabs__list__item:focus { outline: 1px solid #ccc;  }
+
+.responsive-tabs__heading--active:focus,
+.responsive-tabs__list__item--active:focus { outline: none !important;}
+
+.responsive-tabs__list { font-size: 1em; margin: 1em 0 0 0; padding: 0; padding-bottom:11px; line-height: 1em; margin-bottom:25px;     text-align: center;}
+.responsive-tabs__list__item { background: #eee; padding: 7px 30px; margin-right: -1px; border: 1px solid #9A9A9A; color:#636363; }
+.responsive-tabs__list__item:hover {background: #efefef }
+.responsive-tabs__list__item--active, 
+.responsive-tabs__list__item--active:hover {  background: #fff; color:#636363;}
+
+.responsive-tabs__panel { margin-bottom: 50px;}
+
+@media (max-width: 767px) {
+	.responsive-tabs__heading { 
+		padding: 0.9em; border-radius: 5px; border: 1px solid #ccc;
+		background: #F1F1F1;
+		position: relative;    margin-top: 0; color:#636363; outline:none !important; width: 100%;
+    display: inline-block;
+	}
+    .responsive-tabs__heading:focus{outline:none !important;}
+	.responsive-tabs__heading:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #000000;
+	}
+	.responsive-tabs__heading:hover,
+	.responsive-tabs__heading--active:hover { background-color: #efefef}
+	.responsive-tabs__heading--active { background: #fff;}
+	.responsive-tabs__heading--active:after {
+		border-bottom: 6px solid #000;
+		border-top:0;
+	 }
+	 responsive-tabs-wrapper{ margin-bottom:15px;}
+}
+
+/* END - Optional - Basic Skin */
